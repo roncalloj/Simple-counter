@@ -1,4 +1,13 @@
-
+.fondo{
+    background: black;
+    margin: auto;
+}
+.contadores{
+    font-size: 32px;
+    color : white;
+    background: rgb(44, 42, 42);
+    margin: auto;
+}
 /* 
 
     You can write your own styles here...

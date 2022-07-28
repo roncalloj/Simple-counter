@@ -1,13 +1,7 @@
 import React, {useState, useEffect} from "react";
 //<Card imageUrl="http://via.placeholder.com/350x150" title="A nice image" />
 export const Contador = () => {
-  const myStyles = {
-    fontSize: "32px",
-    background: "black",
-    color : "white",
-    margin: "auto"
-};
-
+  
     const [num, setNum] = useState(7);
     const [dec, setDec] = useState(8);
     const [cen, setCen] = useState(0);
@@ -35,13 +29,13 @@ export const Contador = () => {
       }
     
       return (
-        <div className={"container"} style={myStyles}>
+        <div className="container fondo">
           <ul className="list-group list-group-horizontal d-flex justify-content-center" >
-            <li className="list-group-item" id="icon"></li>
-            <li className="list-group-item">{mil}</li>
-            <li className="list-group-item">{cen}</li>
-            <li className="list-group-item">{dec}</li>
-            <li className="list-group-item">{num}</li>
+            <li className="list-group-item contadores" id="icon"><i class="fa-regular fa-clock"></i></li>
+            <li className="list-group-item contadores">{mil}</li>
+            <li className="list-group-item contadores">{cen}</li>
+            <li className="list-group-item contadores">{dec}</li>
+            <li className="list-group-item contadores">{num}</li>
           </ul>
         </div>
       );
